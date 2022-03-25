@@ -1,0 +1,44 @@
+header{
+    height: 100px;
+    font-size: 1.8em;
+    text-align: center;
+}
+body{
+    background-color: black;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-image: url(../images/ella-don-LJpbF2GmSx4-unsplash.jpg);
+    background-color: grey;
+    padding: 10px;
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 5px;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    background-color: #B2B2B2;
+    display: inline;
+    padding: 15px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: #00d9ff;
+}
+nav ul{
+    text-align: center;
+    font-size: 1.2em;
+}
+#active{
+    background-color: rgb(0, 255, 0);
+}
+.logo{
+    float: left;
+    
+    
+}
