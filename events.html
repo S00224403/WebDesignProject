@@ -8,11 +8,43 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" /> <!--8-bit character encoding capable of encoding all possible characters-->
-        <meta name="description" content="Template Page">
+        <meta name="description" content="eSport Events">
         <meta name="keywords" content="worlds, league of legends, esports event, esports, statistics">
-        <title> Template</title>
+        <title>eSport Events</title>
         <link rel="stylesheet" type="text/css" href="styles/style.css">
-
+        <style>
+            .required{
+                font-weight: bold;
+                color: red;
+            }
+            label{
+                float: left;
+                width: 112px;
+                padding-right: 10px;
+                text-align: right;
+            }
+            input{
+                margin-left: 1em;
+                margin-bottom: .5em;
+                width: 220px;
+            }
+            input[type="checkbox"]{
+                width: 15px;
+            }
+            input[type="radio"]{
+                width: 10px;
+            }
+            #button, #reset{
+                margin-top: 0.5em;
+                width: 8em;
+                background-color: orange;
+                border: 2px solid black;
+            }
+            fieldset{
+                width: 20%;
+            }
+        </style>
+        <link rel="Icon" href ="images/favicon.ico" type="image">
     </head>
     <body> <!--Body Tag Start of Body section display on screen-->
         <header>
@@ -42,6 +74,33 @@
                     <a href="https://escharts.com/blog/most-watched-tournaments-2021">Read more....</a>
                 </p>
                 <img src="images/leagueEvent.jpg" alt="eSport event" height="300px" width="500px">
+            </section>
+            <section>
+                <h3>If you have any questions about upcoming eSport events fill out the form</h3>
+                <form action="http:/foo.com" method="get">
+                    <label for="first_name">First name:<span class="required">*</span></label>
+                    <input type="text" name ="first_name" id="first_name" autofocus required><br>
+                    <label for="last_name">Last name:<span class="required">*</span></label>
+                    <input type="text" name ="last_name" id="last_name" required><br>
+                    <label for="email">Email:<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="gender" name="gender" value="male">Male
+                    <input type="radio" id="gender2" name="gender" value="female">Female
+                    <input type="radio" id="gender3" name="gender" value="other" checked>Other<br>
+                    <label for="internet">Heard of us:</label>
+                    <fieldset>
+                        <input type="checkbox" id="internet" name="internet" value="internet" checked>Internet<br>
+                        <input type="checkbox" class="margin1" id="paper" name="paper" value="paper">Newspaper<br>
+                        <input type="checkbox" class="margin1" id="friend" name="friend" value="friend">Friend<br>
+                        <input type="checkbox" class="margin1" id="other" name="Add" value="Add">Others<br>
+                    </fieldset><br>
+                    <label for="message">Query:</label>
+                    <textarea cols="50" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea><br>
+                    <input type="submit" name="submit" id="button" value="Submit">
+                    <input type="reset" name="reset" id="reset">
+                </form>
+                <p style="margin-left: 138px"><span class="required">*</span><em>indicates a required field</em></p>;
             </section>
         </main>
         <footer> <!--Footer grouping of content for the bottom of the screen and will need css to place at the bottom-->
