@@ -12,27 +12,12 @@
         <meta name="keywords" content="video games, esports, twitch, games, gamers, fortnite, league of Legends, call of duty">
         <title>eSports Homepage</title>
         <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <style>
-            aside{
-                width: 15%;
-                float: right; 
-            }
-            main{ 
-                height: 350px;    
-                /* to give the sidebar some height for its border */
-                
-                float: left;
-                
-            }
-        </style>
         <link rel="Icon" href ="images/favicon.ico" type="image">
     </head>
     <body> <!--Body Tag Start of Body section display on screen-->
         <header>
             <img class="logo" src="images/logo.png" alt="logo" height="80px" width="80px">
             <h1>eSports</h1>
-            
-            
         </header>
         
         <main>
@@ -41,14 +26,15 @@
                     <li id="active"><a href="index.html">Home</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="careers.html">Careers</a></li>
-                    <li><a href="famous.html">Notable Figure</a></li>
+                    <li><a href="famous.html">Notable Figures</a></li>
                 </ul>
             </nav>
-            <aside class="left"><h2>Aside1</h2></aside>
-            <section>
-                <h2>What is eSports?</h2>
-                <img class="floatLeft" src="images/esport1.jpg" alt="esports tournament" height="15%" width="20%">
-                <p>
+            
+             <!--Code lifted from w3 schools-->
+             <section class="row">
+                <section class="column">
+                    <h2>What is eSports?</h2>
+                    <p>
                     eSports describes the world of competitive, organized video gaming. Competitors from 
                     different leagues or teams face off in the same games that are popular with at-home 
                     gamers: Fortnite, League of Legends, Counter-Strike, Call of Duty, Overwatch and Madden NFL, 
@@ -56,10 +42,32 @@
                     who attend live events or tune in on TV or online. Streaming services like Twitch allow viewers 
                     to watch as their favorite gamers play in real time, and this is typically where popular gamers build up their fandoms.
                     <a href="https://edition.cnn.com/2018/08/27/us/esports-what-is-video-game-professional-league-madden-trnd/index.html">Read more here....</a>
-                    
-                
-                </p>
-                
+                    </p>
+                    <img src="images/esport1.jpg" alt="esports tournament 1" height="250px" width="100%">
+                </section>
+                <section class="column">
+                    <h2>What happens in eSport tournaments?</h2>
+                    <img src="images/esport2.jpg" alt="esports tournament 2" height="250px" width="100%">
+                    <p>
+                        If you've never attended an esports tournament before, you may not know what to expect. 
+                        In many ways, an esports tournament is similar to a conventional sporting event. Just like 
+                        conventional playoffs and tournaments, esports formats include qualifying rounds and elimination 
+                        brackets. However, various esports tournaments approach things slightly differently. Below, 
+                        we break down the main types of tournament formats you are likely to encounter when exploring live esports events.
+                        <a href="https://www.talkesport.com/inothernews/what-generally-happens-at-an-esports-event/">Read more about tournaments here....</a>
+                    </p>
+                </section>
+                <section class="column">
+                    <h2>Who can compete?</h2>
+                    <p>
+                        Any esports tournament will be advertised as an open or closed event. This essentially 
+                        lets you know who can participate with any given event. Open events mean anyone is free 
+                        to enter. By contrast, closed events tend to operate on an invite-only basis. In these 
+                        cases, those organizing an event will decide who can compete.
+                        <a href="https://www.talkesport.com/inothernews/what-generally-happens-at-an-esports-event/">Read more about who can compete here....</a>
+                    </p>
+                    <img src="images/esport3.jpg" alt="esports tournament 2" height="250px" width="100%">
+                </section>
             </section>
             
             
